@@ -38,7 +38,7 @@ Este proyecto es una aplicación web full-stack con una arquitectura de microser
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/2025-backend-Patohtml.git
+   git clone https://github.com/tuusuario/2025-backend-beniciocorro.git
    cd 2025-backend-beniciocorro
    ```
 
