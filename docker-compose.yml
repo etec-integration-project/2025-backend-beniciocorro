@@ -6,7 +6,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootpass
       MYSQL_DATABASE: mysql_data
-      MYSQL_USER: patoarch
+      MYSQL_USER: etec
       MYSQL_PASSWORD: 1234
     volumes:
       - ./db/mysql:/var/lib/mysql
@@ -21,7 +21,7 @@ services:
       - "3001:3001"
     environment:
       - DB_HOST=db
-      - DB_USER=patoarch
+      - DB_USER=etec
       - DB_PASSWORD=1234
       - DB_NAME=mysql_data
     depends_on:
