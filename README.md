@@ -83,4 +83,4 @@ Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más deta
 
 ## 📞 Contacto
 
-Para cualquier consulta, no dudes en contactarnos a través de [tu-email@example.com].
+Para cualquier consulta, no dudes en contactarnos a través de [b.corro@alumno.etec.um.edu.ar].
