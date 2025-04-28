@@ -203,9 +203,9 @@ def generate_wiki_content(wiki_dir: Path, data_dir: Path):
     try:
         # Home.md
         with open(wiki_dir / 'Home.md', 'w', encoding='utf-8') as f:
-            f.write("""# UM Tesorería MercadoPago Service Wiki
+            f.write("""# Benicio's Wiki
 
-Bienvenido a la Wiki del servicio de integración con MercadoPago de UM Tesorería.
+Welcome to the amazing Benicio Wiki yes, yes.
 
 ## Navegación Rápida
 
@@ -216,7 +216,7 @@ Bienvenido a la Wiki del servicio de integración con MercadoPago de UM Tesorer�
 
         # Milestones.md
         with open(wiki_dir / 'Milestones.md', 'w', encoding='utf-8') as f:
-            f.write("# Milestones del Servicio MercadoPago\n\n")
+            f.write("# Milestones de mi repo\n\n")
             for ms in milestones:
                 f.write(f"## {ms['title']}\n")
                 f.write(f"**Estado:** {ms['state']}\n\n")
@@ -244,7 +244,7 @@ Bienvenido a la Wiki del servicio de integración con MercadoPago de UM Tesorer�
 
         active_issues = [i for i in issues if i['state'] == 'open']
         with open(wiki_dir / 'Issues-Activos.md', 'w', encoding='utf-8') as f:
-            f.write("# Issues Activos - Servicio MercadoPago\n\n")
+            f.write("# Issues Activos \n\n")
             for issue in active_issues:
                 f.write(f"## #{issue['number']}: {issue['title']}\n")
                 f.write(f"**Creado:** {issue['created_at']}\n\n")
@@ -266,7 +266,7 @@ Bienvenido a la Wiki del servicio de integración con MercadoPago de UM Tesorer�
         # Issues-Cerrados.md
         closed_issues = [i for i in issues if i['state'] == 'closed']
         with open(wiki_dir / 'Issues-Cerrados.md', 'w', encoding='utf-8') as f:
-            f.write("# Issues Cerrados - Servicio MercadoPago\n\n")
+            f.write("# Issues Cerrados \n\n")
             for issue in closed_issues:
                 f.write(f"## #{issue['number']}: {issue['title']}\n")
                 f.write(f"**Creado:** {issue['created_at']}\n")
@@ -288,7 +288,7 @@ Bienvenido a la Wiki del servicio de integración con MercadoPago de UM Tesorer�
 
         return True
     except IOError as e:
-        print(f"Error escribiendo archivos de la wiki del Servicio MercadoPago: {e}")
+        print(f"Error escribiendo archivos de la wiki: {e}")
         return False
 
 def verify_json_content(file_path):
